@@ -1,12 +1,12 @@
 import random
 def coprime(a,b):
   w=b
-  while w>0:
-    if a%w==0 and b%w==0 and w!=1:
+  while w>1:
+    if a%w==0 and b%w==0:
       return False
-
     w=w-1 
-    return True
+    
+  return True
 def prime(x):
    t=2
    while t<x:
@@ -25,9 +25,9 @@ while True :
      break
 n=p*q
 w=(p-1)*(q-1)
-
+print(w)
 while True:
-  e=random.randint(50,100)
+  e=random.randint(1,100)
   if coprime(w,e):
     break
 print("public key is",n,",",e)
