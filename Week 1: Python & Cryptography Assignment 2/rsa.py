@@ -25,7 +25,7 @@ while True :
      break
 n=p*q
 w=(p-1)*(q-1)
-print(w)
+
 while True:
   e=random.randint(50,100)
   if coprime(w,e):
