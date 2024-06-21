@@ -19,8 +19,8 @@ p=2
 q=2
 
 while True :
-  p=random.randint(10,200)
-  q=random.randint(10,200)
+  p=random.randint(10,300)
+  q=random.randint(10,300)
   if(prime(p) and prime(q) and p!=q):
      break
 n=p*q
